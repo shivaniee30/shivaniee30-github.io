@@ -596,15 +596,7 @@ footer {
                         </a>
                     </div>
                     <div id="navbar-placeholder"></div>
-            <script>
-                // Load the navbar
-                fetch('navbar.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('navbar-placeholder').innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading navbar:', error));
-            </script>
+            
                     <ul class="nav-links">
                         <li><a href="file:///C:/Users/Shivani/OneDrive/Desktop/ASSIGNMENTS/3rd%20year/semester%205/Final%20Website/index.html">Home</a></li>
                         <li><a href="C:\Users\Shivani\OneDrive\Desktop\ASSIGNMENTS\3rd year\semester 5\Final Website\ProductListingPage.html">Shop</a></li>
@@ -796,6 +788,15 @@ footer {
                 navbar.classList.remove('navbar-light');
             }
         });
+      
+                // Load the navbar
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('navbar-placeholder').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading navbar:', error));
+         
          // Carousel Logic
          const carouselSlide = document.getElementById('carouselSlide');
         const prevBtn = document.getElementById('prevBtn');
